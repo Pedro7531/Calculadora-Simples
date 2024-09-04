@@ -32,7 +32,10 @@ def divisao_inteira():
 def Modulo():
     x = float(input("Primeiro número: "))
     y = float(input("Segundo número: "))
-    print("Modulo(resto): ",x%y)
+    if(y == 0):
+        print("não é possível tirar resto quando o divisor for 0!")
+    else:
+        print("Modulo(resto): ",x%y)
 
 def exponenciacao():
     x = float(input("Primeiro número: "))
